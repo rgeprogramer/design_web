@@ -1,15 +1,6 @@
-let n1 = prompt('digite o primeiro numero:')
-n1=Number(n1)
-let n2 = prompt('digite o segundo numero:')
-n2=Number(n2)
-
-alert(`${n1} > ${n2} = ${n1 > n2}`)
-alert(`${n1} >= ${n2} = ${n1 >+ n2}`)
-alert(`${n1} < ${n2} = ${n1 < n2}`)
-alert(`${n1} <= ${n2} = ${n1 <= n2}`)
-
-alert(`${n1} == ${n2} = ${n1 == n2}`)
-alert(`${n1} != ${n2} = ${n1 != n2}`)
-
-alert(`${n1} === ${n2} = ${n1 == String(n2)}`)
-alert(`${n1} !== ${n2} = ${n1 != String(n2)}`)
+let nasc = prompt('digite seu ano de nascimento:');
+nasc = parseInt(nasc);
+let fds = confirm('clique em ok se hoje é fim de semana:');
+alert(`hoje é fim de semana ? ${fds == true}`);
+alert(`Vocé é maior de idade ? ${2025 - nasc >=18}`);
+alert(`Vocé pode beber ? ${fds == true && (2025 - nasc) >=18}`);
