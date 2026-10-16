@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
     <body>
+       
+        <button onclick="handleClick(event)">
+            Clica Aqui
+        </button>
+        <input type="text" onchange="atualizarNome(this.value)">
         
+        <script>
+           function handleClick(event){
+                console.log('Clicado!', event.target);
+            } 
+            
+            atualizarNome = function(valor){   
+                 console.log('nome:',valor);
+            }
+        </script>
     </body>
 </html>
