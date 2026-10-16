@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-witdh, initial-scale-1.0">
+        <title>Calculadora</title>
+    </head>
     <body>
-       
-        <button onclick="handleClick(event)">
-            Clica Aqui
-        </button>
-        <input type="text" onchange="atualizarNome(this.value)">
-        
-        <script>
-           function handleClick(event){
-                console.log('Clicado!', event.target);
-            } 
-            
-            atualizarNome = function(valor){   
-                 console.log('nome:',valor);
-            }
-        </script>
+       <center>
+            <h3>Calculadora</h3>
+            <form id="Calculadora">
+                <table border="1" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td>
+                            Primeiro Numero
+                        </td>
+                        <td>
+                            <input type="number" id="n1" name="n1" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Operação</td>
+                        <td>
+                            <select id="op" name="op" required>
+                                <option value="">selecione</option>
+                                <option value="+">Somar(+)</option>
+                                <option value="-">Subtrair(-)</option>
+                                <option value="*">Multiplicar(x)</option>
+                                <option value="/">Dividir(/)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Segundo Numero
+                        </td>
+                        <td>
+                            <input type="number" id="n2" name="n2" required>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="calcular">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+       </center>
+     <script src="app.js" defer ></script>
     </body>
 </html>
