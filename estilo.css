@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 2000px;
+}
+
+h1,h3{
+    margin:0px;
+    padding: 10px;
+    
+}
+
+.destaque{
+    color:red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.solido{
+    color:white;
+    background-color: rgb(0, 0, 0);
+}
